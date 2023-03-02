@@ -13,10 +13,12 @@ my hyprland and sway dotfiles on my endeavouros install :3
 - please load `catppuccin-frappe.rasi` to `~.local/share/rofi/themes/` so you can get the proper theming for rofi
 - if there are any instances of `/home/ophi/[...]`, be sure to replace them with *your*
 
+**INSTALLATION GUIDE:** simply copy the contents of `universal` and either `Hyprland` or `sway` into your .config file
+
 # **`REQUIRED STUFF`**
 ## 1. Window Managers:
-- sway (`copy everything from __inside__ **sway** and **universal** to your **.config** directory`)
-- Hyprland (`copy everything from __inside__ **sway** and **universal** to your **.config** directory`)
+- sway (copy everything from __INSIDE__ **sway** and **universal** to your **.config** directory)
+- Hyprland (copy everything from __INSIDE__ **sway** and **universal** to your **.config** directory)
 
 ## 2. Applications:
 - zsh
