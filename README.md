@@ -1,4 +1,5 @@
-![hyprland](https://github.com/ophi4383/dotfiles/blob/main/gitrepo/2023-03-02T19%3A09%3A33%2C135539200%2B01%3A00.png)
+![hyprland](https://github.com/ophi4383/dotfiles/blob/main/gitrepo/2023-03-04T17%3A45%3A46%2C796113298%2B01%3A00.png)
+
 # **`DOTFILES`**
 my hyprland dotfiles on my endeavouros install :3 
 
