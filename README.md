@@ -1,11 +1,10 @@
 ![hyprland](https://github.com/ophi4383/dotfiles/blob/main/gitrepo/2023-03-02T19%3A09%3A33%2C135539200%2B01%3A00.png)
 # **`DOTFILES`**
-my hyprland and sway dotfiles on my endeavouros install :3 
+my hyprland dotfiles on my endeavouros install :3 
 
 | Directory name | Description |
 | ---- | --------------- |
 | Hyprland | Dotfiles specific to hyprland |
-| sway | Dotfiles specific to sway |
 | universal | Dotfiles nonspecific to any wm |
 | gitrepo | Stuff (like screenshots) related to this repo |
 
@@ -17,8 +16,7 @@ my hyprland and sway dotfiles on my endeavouros install :3
 
 # **`REQUIRED STUFF`**
 ## 1. Window Managers:
-- sway (copy everything from __INSIDE__ **sway** and **universal** to your **.config** directory)
-- Hyprland (copy everything from __INSIDE__ **sway** and **universal** to your **.config** directory)
+- Hyprland
 
 ## 2. Applications:
 - zsh
