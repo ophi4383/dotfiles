@@ -2,17 +2,9 @@
 # **`DOTFILES`**
 my hyprland dotfiles on my endeavouros install :3 
 
-| Directory name | Description |
-| ---- | --------------- |
-| Hyprland | Dotfiles specific to hyprland |
-| universal | Dotfiles nonspecific to any wm |
-| gitrepo | Stuff (like screenshots) related to this repo |
-
 **NOTES:** 
 - please load `catppuccin-frappe.rasi` to `~.local/share/rofi/themes/` so you can get the proper theming for rofi
-- if there are any instances of `/home/ophi/[...]`, be sure to replace them with *your*
-
-**INSTALLATION GUIDE:** simply copy the contents of `universal` and either `Hyprland` or `sway` into your .config file
+- if there are any instances of `/home/ophi/[...]`, be sure to replace them with *your* username
 
 # **`REQUIRED STUFF`**
 ## 1. Window Managers:
@@ -31,6 +23,9 @@ my hyprland dotfiles on my endeavouros install :3
 - copyq
 - qt5ct
 - kvantum
+- swaylock
+- swaybg
+
 ## 3. Themes:
 - Catppuccin Frappe:
   - [GTK](https://github.com/catppuccin/gtk)
