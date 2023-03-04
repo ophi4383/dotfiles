@@ -30,7 +30,7 @@ window#waybar {
     padding-bottom: 3px;
 }
 
-#clock, #language, #cpu, #memory, #tray, #pulseaudio, #custom-temp, #custom-spotify {
+#clock, #language, #cpu, #memory, #tray, #pulseaudio, #custom-temp, #custom-spotify, #network {
 	border-radius: 7px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -48,3 +48,15 @@ window#waybar {
 	background-color: @green;
 	color: @mantle;
 }
+#network, #network.linked, #network.ethernet, #network.wifi {
+	background-color: @base;
+}
+
+#network.disabled {
+	background-color: @red
+}
+
+#network.disconnected {
+	background-color: @yellow
+}
+
