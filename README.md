@@ -26,6 +26,7 @@ my hyprland dotfiles on my endeavouros install :3
 - firefox (browser)
 - dolphin (file manager)
 - zsh (used shell)
+- jetbrains mono nerd font (used font in most of the configs)
 - themes:
 	- catppuccin frappe (gtk, rofi, kvantum)
 	- qogir (icons)
