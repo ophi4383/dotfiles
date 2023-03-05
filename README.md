@@ -12,20 +12,20 @@ my hyprland dotfiles on my endeavouros install :3
 - Hyprland
 
 ## 2. Applications:
-- zsh
-  - oh my zsh
+- ZSH
+  - Oh My Zsh
 - kitty
-- rofi
+- Rofi (lbonn wayland fork)
 - waybar
-- dex
+- Dex
 - micro
-- grimshot
-- neofetch
-- copyq
-- qt5ct
-- kvantum
-- swaylock
-- swaybg
+- Grimshot
+- Neofetch
+- Cliphist
+- Qt5ct
+- Kvantum
+- Swaylock
+- Swaybg
 
 ## 3. Themes:
 - Catppuccin Frappe:
