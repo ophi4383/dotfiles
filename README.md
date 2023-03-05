@@ -7,36 +7,8 @@ my hyprland dotfiles on my endeavouros install :3
 - please load `catppuccin-frappe.rasi` to `~.local/share/rofi/themes/` so you can get the proper theming for rofi
 - if there are any instances of `/home/ophi/[...]`, be sure to replace them with *your* username
 
-# **`REQUIRED STUFF`**
-## 1. Window Managers:
-- Hyprland
-
-## 2. Applications:
-- ZSH
-  - Oh My Zsh
-- kitty
-- Rofi (lbonn wayland fork)
-- waybar
-- Dex
-- micro
-- Grimshot
-- Neofetch
-- Cliphist
-- Qt5ct
-- Kvantum
-- Swaylock
-- Swaybg
-
-## 3. Themes:
-- Catppuccin Frappe:
-  - [GTK](https://github.com/catppuccin/gtk)
-  - [Rofi](https://https://github.com/catppuccin/rofi)
-  - [Kvantum](https://github.com/catppuccin/kvantum)
-- Qogir:
-  - [Icons](https://github.com/vinceliuice/Qogir-theme)
-- ZSH:
-  - Powerlevel10K
-## 4. Font: Jetbrains Mono Nerd Font
+# **`DEPENDENCIES`**
+*w.i.p*
 
 # **`Credits`**:
 - [EndeavourOS](https://endeavouros.com/) for making the [setup](https://github.com/endeavouros-team/endeavouros-i3wm-setup) which I based these dotfiles on
