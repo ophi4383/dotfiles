@@ -6,6 +6,7 @@ my hyprland dotfiles on my endeavouros install :3
 **NOTES:** 
 - please load `catppuccin-frappe.rasi` to `~.local/share/rofi/themes/` so you can get the proper theming for rofi
 - if there are any instances of `/home/ophi/[...]`, be sure to replace them with *your* username
+- load the entire `sugar-candy` folder to `/usr/share/sddm/themes/`
 - to install, just paste everything in this dotfiles repository to your *.config* file (make sure to backup everything before hand)
 - i am unsure if these dotfiles work on other distros, so if you'd like to use these dotfiles then i'd recommend getting arch before hand (or any derivative : ) )
 # **`DEPENDENCIES`**
@@ -27,6 +28,7 @@ my hyprland dotfiles on my endeavouros install :3
 - dolphin (file manager)
 - micro (text editor)
 - zsh (used shell)
+- sddm (display manager)
 - jetbrains mono nerd font (used font in most of the configs)
 - themes:
 	- catppuccin frappe (gtk, rofi, kvantum)
