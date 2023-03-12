@@ -12,10 +12,9 @@ my hyprland dotfiles on my endeavouros install :3
 1. Install yay (if not installed already)
 2. Use yay to install all dependencies you need (see below)
 3. Copy everything from `sddm` to `/usr/share/sddm/themes/`
-4. Copy everything from `rofi` to `~/.local/share/rofi/themes`
-5. Copy everything from `.config` to `~/.config` (MAKE SURE TO BACKUP BEFOREHAND)
-6. Reboot
-7. Enjoy :3
+4. Copy everything from `.config` to `~/.config` (MAKE SURE TO BACKUP BEFOREHAND)
+5. Reboot
+6. Enjoy :3
 
 # **`DEPENDENCIES`**
 - Hyprland (window manager)
