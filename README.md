@@ -4,13 +4,22 @@
 my hyprland dotfiles on my endeavouros install :3 
 
 **NOTES:** 
-- please load `catppuccin-frappe.rasi` to `~.local/share/rofi/themes/` so you can get the proper theming for rofi
 - if there are any instances of `/home/ophi/[...]`, be sure to replace them with *your* username
-- load the entire `sugar-candy` folder to `/usr/share/sddm/themes/`
-- to install, just paste everything in this dotfiles repository to your *.config* file (make sure to backup everything before hand)
 - i am unsure if these dotfiles work on other distros, so if you'd like to use these dotfiles then i'd recommend getting arch before hand (or any derivative : ) )
+
+# **`INSTALLATION`**
+*NOTE: This is a very loose installation guide*
+1. Install yay (if not installed already)
+2. Use yay to install all dependencies you need (see below)
+3. Copy everything from `sddm` to `/usr/share/sddm/themes/`
+4. Copy everything from `rofi` to `~/.local/share/rofi/themes`
+5. Copy everything from `.config` to `~/.config` (MAKE SURE TO BACKUP BEFOREHAND)
+6. Reboot
+7. Enjoy :3
+
 # **`DEPENDENCIES`**
 - Hyprland (window manager)
+	- xdg desktop portal hyprland
 - waybar (status bar)
 - mako (notification daemon)
 - cliphist (clipboard manager)
@@ -36,6 +45,8 @@ my hyprland dotfiles on my endeavouros install :3
 	- powerlevel10k (shell theme)
 - qt5ct (for qt application themes)
 	- Kvantum (for the above as well)
+- nwg-look, lxappearance (for gtk application themes)
+- sddm config editor (for configuring sddm)
 
 # **`CREDITS`**:
 - [EndeavourOS](https://endeavouros.com/) for making the [setup](https://github.com/endeavouros-team/endeavouros-i3wm-setup) which I based these dotfiles on
