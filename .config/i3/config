@@ -1,0 +1,229 @@
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# no autoturnoff
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s no blank
+# autotiling
+exec_always --no-startup-id autotiling
+
+# notifications
+exec --no-startup-id dunst
+
+# polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# background
+exec --no-startup-id feh --bg-scale ~/.config/i3/background.png
+
+# start picom
+exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
+
+# gaps
+gaps inner 10
+gaps outer 5
+
+# mod4 = super / window key
+set $mod Mod4
+
+# font
+font pango:Iosevka 8
+
+# xdg autostart using dex
+exec --no-startup-id dex --autostart --environment i3
+
+# idk what this does
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# networkmanager applet
+exec --no-startup-id nm-applet
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# move tiling windows via drag & drop by left-clicking into the title bar,
+# or left-clicking anywhere into the window while holding the floating modifier.
+tiling_drag modifier titlebar
+
+# start a terminal
+bindsym $mod+Return exec --no-startup-id alacritty
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# screenshits
+bindsym --release $mod+Print exec --no-startup-id scrot /home/ophi/Pictures/%F_%T_$wx$h.png -e 'xclip -selection clipboard -target image/png -i $f && rm $f' -e 'notify-send "Screenshot saved as %F_%T.png"'
+bindsym --release $mod+Shift+Print exec --no-startup-id scrot -s /home/ophi/Pictures/%F_%T_$wx$h.png -e 'xclip -selection clipboard -target image/png -i $f && rm $f' -e 'notify-send "Screenshot saved as %F_%T.png"'
+
+# start rofi
+bindsym $mod+d exec rofi -show drun
+
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+m focus right
+
+# change focus with arrow keys
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+m move right
+
+# move focused window with arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+z layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+q focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# something something workspace variables something something
+set $ws1 "1" 
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+ampersand 		workspace number $ws1
+bindsym $mod+eacute 		workspace number $ws2
+bindsym $mod+quotedbl 		workspace number $ws3
+bindsym $mod+apostrophe 	workspace number $ws4
+bindsym $mod+parenleft 		workspace number $ws5
+bindsym $mod+minus 			workspace number $ws6
+bindsym $mod+egrave 		workspace number $ws7
+bindsym $mod+underscore 	workspace number $ws8
+bindsym $mod+ccedilla 		workspace number $ws9
+bindsym $mod+agrave 		workspace number $ws10
+
+# switch to workspaces with numpad keys
+bindcode $mod+87 workspace 1
+bindcode $mod+88 workspace 2
+bindcode $mod+89 workspace 3
+bindcode $mod+83 workspace 4
+bindcode $mod+84 workspace 5
+bindcode $mod+85 workspace 6
+bindcode $mod+79 workspace 7
+bindcode $mod+80 workspace 8
+bindcode $mod+81 workspace 9
+bindcode $mod+90 workspace 10
+
+# switch to workspaces with numpad keys (numlock)
+bindcode $mod+Mod2+87 workspace 1
+bindcode $mod+Mod2+88 workspace 2
+bindcode $mod+Mod2+89 workspace 3
+bindcode $mod+Mod2+83 workspace 4
+bindcode $mod+Mod2+84 workspace 5
+bindcode $mod+Mod2+85 workspace 6
+bindcode $mod+Mod2+79 workspace 7
+bindcode $mod+Mod2+80 workspace 8
+bindcode $mod+Mod2+81 workspace 9
+bindcode $mod+Mod2+90 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+ampersand 	move container to workspace number $ws1
+bindsym $mod+Shift+eacute 		move container to workspace number $ws2
+bindsym $mod+Shift+quotedbl		move container to workspace number $ws3
+bindsym $mod+Shift+apostrophe 	move container to workspace number $ws4
+bindsym $mod+Shift+5 			move container to workspace number $ws5
+bindsym $mod+Shift+minus 		move container to workspace number $ws6
+bindsym $mod+Shift+egrave 		move container to workspace number $ws7
+bindsym $mod+Shift+underscore	move container to workspace number $ws8
+bindsym $mod+Shift+ccedilla 	move container to workspace number $ws9
+bindsym $mod+Shift+agrave 		move container to workspace number $ws10
+
+# move focused container to workspace with numpad keys
+bindcode $mod+Shift+87	 	move container to workspace number $ws1
+bindcode $mod+Shift+88 		move container to workspace number $ws2
+bindcode $mod+Shift+89		move container to workspace number $ws3
+bindcode $mod+Shift+83	 	move container to workspace number $ws4
+bindcode $mod+Shift+84 		move container to workspace number $ws5
+bindcode $mod+Shift+85 		move container to workspace number $ws6
+bindcode $mod+Shift+79 		move container to workspace number $ws7
+bindcode $mod+Shift+80		move container to workspace number $ws8
+bindcode $mod+Shift+81 		move container to workspace number $ws9
+bindcode $mod+Shift+90 		move container to workspace number $ws10
+
+# move focused container to workspace with numpad keys (numlock)
+bindcode $mod+Shift+Mod2+87	 	move container to workspace number $ws1
+bindcode $mod+Shift+Mod2+88 		move container to workspace number $ws2
+bindcode $mod+Shift+Mod2+89		move container to workspace number $ws3
+bindcode $mod+Shift+Mod2+83	 	move container to workspace number $ws4
+bindcode $mod+Shift+Mod2+84 		move container to workspace number $ws5
+bindcode $mod+Shift+Mod2+85 		move container to workspace number $ws6
+bindcode $mod+Shift+Mod279 		move container to workspace number $ws7
+bindcode $mod+Shift+Mod2+80		move container to workspace number $ws8
+bindcode $mod+Shift+Mod2+81 		move container to workspace number $ws9
+bindcode $mod+Shift+Mod2+90 		move container to workspace number $ws10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym m resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys     
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+for_window [class="^.*"] border pixel 0
+
