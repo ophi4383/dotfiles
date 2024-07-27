@@ -1,6 +1,7 @@
 ![:3](https://github.com/ophi4383/dotfiles/blob/main/repo/i3.png)
 # **DOTFILES**
 my i3 dotfiles on my arch install yuh
+
 **notes** if there are any instances of something like `/home/ophi/[...]` or similar be sure to replace my name with yours, don't blame me if nothing or some parts of this don't work btw
 
 # **DEPENDENCIES**
@@ -16,4 +17,5 @@ my i3 dotfiles on my arch install yuh
 - dunst (notification daemon)
 - rofi (application menu)
 - polybar (status bar)
+
 *(check the files for anything that might not be here)*
